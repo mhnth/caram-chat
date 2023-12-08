@@ -1,9 +1,20 @@
-import Image from 'next/image';
+import { ChatList } from '@/components/layout';
+import { IChatAddon, ISidebar } from '@/components/icons';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      Caram chat
+    <main className="min-h-screen">
+      {/* header */}
+      <div className="flex justify-between">
+        <span>
+          <ISidebar />
+        </span>
+        <span>Caram</span>
+        <span>
+          <IChatAddon />
+        </span>
+      </div>
+      <ChatList />
     </main>
   );
 }

@@ -1,4 +1,6 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
+
+const colors = require('tailwindcss/colors');
 
 const config: Config = {
   content: [
@@ -13,8 +15,12 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        tex: colors.gray,
+        primary: colors.gray,
+      },
     },
   },
   plugins: [],
-}
-export default config
+};
+export default config;
